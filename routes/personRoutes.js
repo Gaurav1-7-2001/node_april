@@ -2,6 +2,7 @@ const express =require('express');
 const router =express.Router();
 const Person =require('../models/Person')
 
+// post method
 router.post('/',async(req,res)=>{
     try {
         const data = req.body; // assuming that req.body is containig person data
