@@ -27,7 +27,7 @@ router.get('/',async(req,res)=>{
     try {
         
         const data =await Person.find();
-        console.log("data saved...");
+        console.log("data get...");
         res.status(200).json({data});
 
     } catch (error) {
